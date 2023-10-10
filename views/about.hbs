@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,200;8..30,300;8..30,400;8..30,900&family=Rye&display=swap" rel="stylesheet">
+    <style>
+        /* Define a CSS class to hide overflow content */
+        .overflow{
+            overflow: hidden;
+            max-height: 100px; /* Adjust this value to control initial visible content */
+        }
+
+        .overflow p{
+            font-size: 1.35rem;
+            font-family: 'Piazzolla', serif;
+font-family: 'Rye', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    {{>navbar}}
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-6 col-12 mx-auto">
+                <div class="row">
+
+
+                    {{!-- right side --}}
+                    <div class="col-md-6 col-12 hero-text order-md-1 order-0">
+                        <figure>
+                            <img src="/imgg2.jpg" class="imge" alt="not_loaded">
+                        </figure>
+                    </div>
+                    <div
+                        class=" col-md-6 vol-12 hero-text order-md-0 order-1 d-flex justify-content-center align-items-start flex-column">
+                        
+<div class="overflow">
+
+                       <p>
+                    Welcome to coding journey! We are a passionate team of developers dedicated to enhancing your coding skills and helping you succeed in the world of programming.
+                </p>
+                <p>
+                    Our mission is to provide you with valuable resources, tutorials, and guidance to make your coding experience enjoyable and productive. Whether you're a beginner just starting your coding adventure or an experienced developer looking to expand your knowledge, we're here to support you every step of the way.
+                </p>
+                <p>
+                    With years of experience in various programming languages and technologies, we are committed to sharing our expertise and insights with you. We believe that coding is not just a skill; it's a powerful tool that can shape the future, and we're excited to be part of your coding journey.
+                </p>
+                      
+                    </div>
+                      <button class="btn-style btn-primary" id="read-more-btn">Read More</button>
+
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+{{>services}}
+     <script>
+        // JavaScript to handle "Read More" functionality
+        const readMoreBtn = document.getElementById("read-more-btn");
+        const content = document.querySelector(".overflow");
+
+        readMoreBtn.addEventListener("click", function () {
+            if (content.style.maxHeight === "100px") {
+                content.style.maxHeight = "none"; // Display all content
+                readMoreBtn.textContent = "Read Less";
+            } else {
+                content.style.maxHeight = "100px"; // Show only a portion of content
+                readMoreBtn.textContent = "Read More";
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.hero-text h1{
+
+    font-size: 2.5rem;
+    line-height: 1.5;
+    text-shadow: 5px 4px 11px rgba(0, 0, 0, 0.26);
+    letter-spacing: 1px;
+    color: #2f2f2f;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    }
+.imge{
+    height: 500px;
+    width: 140%;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+#serviceid{
+    padding-top: 65px;
+}
+
+.box1:hover{
+box-shadow: 0 0 25px 0 rgba(33, 39, 221, 0.26);
+cursor: pointer;
+background-image: linear-gradient(-45deg,#3444f3 0%,#2fcdf5 50%);
+
+}
+
+
+
+.box2:hover{
+    box-shadow: 0 0 25px 0 rgba(33, 39, 221, 0.26);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg,#db8616 0%,#2ff546 50%);
+    
+    }
+
+    .box3:hover{
+        box-shadow: 0 0 25px 0 rgba(33, 39, 221, 0.26);
+        cursor: pointer;
+        background-image: linear-gradient(-45deg,#13033c 0%,#f5992f 50%);
+        
+        }
+        .box4:hover{
+            box-shadow: 0 0 25px 0 rgba(33, 39, 221, 0.26);
+            cursor: pointer;
+            background-image: linear-gradient(-45deg,#f034f3 0%,#a9f52f 50%);
+            
+            }
+            .box5:hover{
+                box-shadow: 0 0 25px 0 rgba(33, 39, 221, 0.26);
+                cursor: pointer;
+                background-image: linear-gradient(-45deg,#f3ed34 0%,#2fcdf5 50%);
+                
+                } .box6:hover{
+                    box-shadow: 0 0 25px 0 rgba(33, 39, 221, 0.26);
+                    cursor: pointer;
+                    background-image: linear-gradient(-45deg,#f33474 0%,#0aa5cc 50%);
+                    
+                    }     
+                    
+                    
+                    
